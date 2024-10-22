@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../CSS/style.css" />
+        <link rel="stylesheet" href="../BootStrap/bootstrap.min.css" />
+        <script src="../JS/main.js"></script>
+        <script src="../JS/jquery-3.7.1.min.js"></script>
+        <title>Bai1</title>
+    </head>
+    <body>
+        <div class="container w-75 mt-5 border-5 border-secondary-subtle border pt-3 pb-5 px-3">
+            <h1>Gallery</h1>
+            <div class="thumbnails">
+                <div class="row p-1">
+                    <div class="col-4 img-thumbnail">
+                        <img
+                            onclick="show(this)"
+                            src="../IMG/b1_h1.jpg"
+                            style=" width: 388px; height: 300px"
+                        />
+                    </div>
+                    <div class="col-4 img-thumbnail">
+                        <img
+                            onclick="show(this)"
+                            src="../IMG/b1_h2.jpg"
+                            style="width: 419px; height: 300px"
+                        />
+                    </div>
+                    <div class="col-4 img-thumbnail">
+                        <img
+                            onclick="show(this)"
+                            src="../IMG/b1_h3.jpg"
+                            style="width: 360px; height: 300px"
+                        />
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-4 img-thumbnail">
+                        <img
+                            onclick="show(this)"
+                            src="../IMG/b1_h4.jpg"
+                            style="height: 300px"
+                        />
+                    </div>
+                    <div class="col-4 img-thumbnail">
+                        <img
+                            onclick="show(this)"
+                            src="../IMG/b1_h5.jpg"
+                            style="height: 300px"
+                        />
+                    </div>
+                    <div class="col-4 img-thumbnail">
+                        <img
+                            onclick="show(this)"
+                            src="../IMG/b1_h6.jpg"
+                            style="height: 300px"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="showBoard">
+            <div id="maskContainer" onclick="hide()"></div>
+            <div id="showContainer">
+                <img src="../IMG/b1_h1.jpg" class="imageShow" />
+            </div>
+        </div>
+    </body>
+</html>
